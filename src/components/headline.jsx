@@ -1,6 +1,6 @@
 import "./headline.css";
-import svgBG from "../../../images/bg-intro-desktop.svg";
-import mockup from "../../../images/image-mockups.png";
+import svgBG from "/images/bg-intro-desktop.svg";
+import mockup from "/images/image-mockups.png";
 export default function HeadLine() {
   return (
     <div className="wrapper">
