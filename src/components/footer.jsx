@@ -98,7 +98,9 @@ export default function Footer() {
           </a>
         </div>
       </div>
-      <div className="invite-btn-footer">Request Invite</div>
+      <div className="invite-btn-footer">
+        <button>Request Invite</button>
+      </div>
       <div className="copyright">&copy;Easybank. All Rights Reserved</div>
     </div>
   );

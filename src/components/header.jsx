@@ -1,5 +1,14 @@
 import "./header.css";
 export function Header() {
+  function handleNav() {
+    let PhoneNav = document.querySelector(".nav");
+    let hamburger = document.querySelector(".hamburger-button");
+    let close = document.querySelector(".close-button");
+    PhoneNav.classList.toggle("active");
+    hamburger.classList.toggle("swap");
+    close.classList.toggle("swap");
+  }
+
   return (
     <div className="header">
       <div className="logo">
@@ -51,10 +60,11 @@ export function Header() {
           </a>
         </div>
       </div>
-      <div className="invite-btn">Request Invite</div>
+      <div className="invite-btn">
+        <button>Request Invite</button>
+      </div>
       <div className="mobile-button">
-        <input type="checkbox" id="check" />
-        <label for="check">
+        <button className="hamburger-button" onClick={handleNav}>
           <svg
             id="hamburger-btn"
             xmlns="http://www.w3.org/2000/svg"
@@ -65,7 +75,8 @@ export function Header() {
               <path d="M0 0h24v1H0zM0 5h24v1H0zM0 10h24v1H0z" />
             </g>
           </svg>
-
+        </button>
+        <button className="close-button swap" onClick={handleNav}>
           <svg
             id="close-btn"
             xmlns="http://www.w3.org/2000/svg"
@@ -77,7 +88,7 @@ export function Header() {
               <path d="M.161 17.632L17.131.662l.708.706-16.97 16.97z" />
             </g>
           </svg>
-        </label>
+        </button>
       </div>
     </div>
   );
