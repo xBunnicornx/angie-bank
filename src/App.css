@@ -1,5 +1,6 @@
 body {
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: "Public Sans", sans-serif;
+  font-size: 18px;
   max-height: 100%;
   max-width: 100%;
 }

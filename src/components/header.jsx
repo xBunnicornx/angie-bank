@@ -1,4 +1,5 @@
 import "./header.css";
+
 export function Header() {
   function handleNav() {
     let PhoneNav = document.querySelector(".nav");

@@ -5,6 +5,7 @@
   justify-items: center;
   cursor: pointer;
   padding: 15px 0;
+  font-family: "Public Sans", sans-serif;
 }
 
 @media screen and (max-width: 1023px) {
@@ -69,7 +70,7 @@
   width: 170px;
   justify-content: center;
   align-items: center;
-  font-size: 20px;
+  font-size: 18px;
   margin: 10px 20px;
   font-weight: bold;
   border: none;
